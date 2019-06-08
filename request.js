@@ -14,6 +14,9 @@ module.exports = function() {
     console.log(JSON.stringify(res));
     console.log('');
   }
-  getEhereumPrice();
+  // getEhereumPrice();
+  setInterval(() =>{
+    getEhereumPrice();
+  }, 1000 * 60 * 3);
 };
 
